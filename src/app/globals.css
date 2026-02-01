@@ -5,7 +5,7 @@
   --font-playfair: 'Playfair Display', serif;
   --font-inter: 'Inter', sans-serif;
   --font-space-mono: 'Space Mono', monospace;
-  --font-hand: 'Patrick Hand', cursive;
+  --font-nothing: 'Nothing You Could Do', cursive;
 }
 
 /* Font Classes */
@@ -22,7 +22,7 @@
 }
 
 .font-hand {
-  font-family: var(--font-hand), cursive;
+  font-family: var(--font-nothing), cursive;
 }
 
 /* Custom Utilities */
