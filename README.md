@@ -10,6 +10,7 @@ This website embraces an **anti-guru aesthetic** with:
 - Polaroid-style image frames with tape effects
 - Handwritten accents (Nothing You Could Do font)
 - Scrapbook-inspired timeline layouts
+- Sticky notes and personal touches throughout
 
 ## 🛠️ Tech Stack
 
@@ -30,14 +31,18 @@ src/
 ├── components/
 │   ├── index.ts         # Barrel exports
 │   ├── Navbar.tsx       # Floating navigation with scroll effect
-│   ├── HeroSection.tsx  # Editorial hero with frames & memo card
-│   ├── ScarsSection.tsx # Timeline of lessons learned
-│   ├── ReceiptsSection.tsx # Ledger-style track record
+│   ├── HeroSection.tsx  # Editorial hero with typewriter memo card
+│   ├── ScarsSection.tsx # Timeline of lessons learned with sticky notes
+│   ├── ReceiptsSection.tsx # Client property cards with detail modal
 │   ├── PartnershipSection.tsx # Family/lifestyle collage
-│   ├── ContactSection.tsx # Contact form with stamp effect
+│   ├── ContactSection.tsx # Personal contact form with decorative elements
+│   ├── BookingModal.tsx # Booking popup modal
 │   ├── Footer.tsx       # Footer with navigation & socials
 │   └── ui/
 │       └── Polaroid.tsx # Reusable polaroid image frame
+public/
+└── images/
+    └── edwin-leong-enhanced.png # Edwin's professional headshot
 ```
 
 ## 🚀 Getting Started
@@ -79,11 +84,20 @@ npm run dev
 ## 🎯 Key Features
 
 - **Responsive Design**: Mobile-first approach with smooth transitions
-- **Editorial Layout**: Magazine-style hero with overlapping frames
-- **Interactive Timeline**: Scroll-based scars/lessons section
-- **Ledger Track Record**: Financial table with status indicators
-- **Contact Form**: Styled as a "contract" with stamp effect
+- **Editorial Layout**: Magazine-style hero with typewriter-style personal message
+- **Interactive Timeline**: Scroll-based scars/lessons section with sticky notes
+- **Property Gallery**: 10 client properties with expandable detail modals
+- **Personal Contact Section**: Styled with sticky notes, Edwin's photo, and trust indicators
+- **Booking Modal**: Clean popup for scheduling consultations
 - **Smooth Scroll**: Navigation anchor links
+
+## 📱 Mobile Responsive
+
+The site is fully responsive with:
+- Adjusted typography sizes for mobile
+- Hidden decorative elements on smaller screens
+- Touch-friendly card layouts
+- Optimized image sizes
 
 ## 📄 License
 

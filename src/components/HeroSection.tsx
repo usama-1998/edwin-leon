@@ -17,9 +17,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onOpenModal }) => {
                         Since 1994 • Singapore
                     </div>
                     <h1 className="text-5xl md:text-6xl lg:text-7xl leading-[0.9] text-slate-900 mb-12">
-                        <span className="font-serif font-bold">I lost money</span> <br />
+                        <span className="font-serif font-medium">I lost money</span> <br />
                         <span className="font-serif italic font-light text-slate-600">so you don&apos;t</span> <br />
-                        <span className="font-serif font-bold hand-underline">have to.</span>
+                        <span className="font-serif font-medium hand-underline">have to.</span>
                     </h1>
 
                     {/* Typewriter/Memo Style Card - Tilted with Shadow */}
@@ -33,7 +33,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onOpenModal }) => {
                         {/* Let's Talk - Minimal Link Style */}
                         <button
                             onClick={onOpenModal}
-                            className="mt-6 font-mono text-lg md:text-xl text-slate-900 border-b-2 border-slate-900 pb-1 hover:text-red-700 hover:border-red-700 transition-all cursor-pointer uppercase tracking-widest"
+                            className="mt-6 font-mono text-lg md:text-xl text-red-700 border-b-2 border-red-700 pb-1 hover:text-red-900 hover:border-red-900 transition-all cursor-pointer uppercase tracking-widest"
                         >
                             Let&apos;s Talk →
                         </button>

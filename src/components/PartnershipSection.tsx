@@ -29,7 +29,7 @@ const PartnershipSection = () => {
                                 <span className="font-mono text-[10px] text-slate-400 uppercase">Add Photo</span>
                             </div>
                         </div>
-                        <div className="absolute bottom-6 left-6 bg-white px-3 py-1 font-mono text-xs">@ShopTravelLove</div>
+                        <div className="absolute bottom-6 left-6 bg-white px-3 py-1 font-mono text-xs">Partner</div>
                     </div>
 
                     {/* Decorative Tape */}
