@@ -5,3 +5,4 @@ export { default as ReceiptsSection } from './ReceiptsSection';
 export { default as PartnershipSection } from './PartnershipSection';
 export { default as ContactSection } from './ContactSection';
 export { default as Footer } from './Footer';
+export { default as BookingModal } from './BookingModal';

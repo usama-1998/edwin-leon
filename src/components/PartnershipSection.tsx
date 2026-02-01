@@ -6,13 +6,23 @@ const PartnershipSection = () => {
         <section className="py-32 px-6 overflow-hidden bg-[#F9F8F4]">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
 
-                {/* Visual Collage */}
+                {/* Visual Collage - Edwin & Melina Photos */}
                 <div className="relative h-[600px] w-full">
+                    {/* Edwin's Photo - Main */}
                     <div className="absolute top-0 left-0 w-3/4 h-3/4 bg-slate-200 overflow-hidden border border-slate-900 z-10">
-                        <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80')] bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700"></div>
+                        <img
+                            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80"
+                            alt="Edwin Leong"
+                            className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                        />
                     </div>
+                    {/* Melina's Photo - Overlapping */}
                     <div className="absolute bottom-0 right-0 w-2/3 h-2/3 bg-white p-4 border border-slate-900 z-20 shadow-2xl -rotate-2">
-                        <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
+                        <img
+                            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
+                            alt="Melina"
+                            className="w-full h-full object-cover"
+                        />
                         <div className="absolute bottom-6 left-6 bg-white px-3 py-1 font-mono text-xs">@ShopTravelLove</div>
                     </div>
                     {/* Decorative Tape */}

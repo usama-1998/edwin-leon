@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldAlert } from 'lucide-react';
+import { ShieldAlert, Lightbulb } from 'lucide-react';
 import Polaroid from './ui/Polaroid';
 
 const ScarsSection = () => {
@@ -112,6 +112,29 @@ const ScarsSection = () => {
                     </div>
 
                 </div>
+
+                {/* Final Lesson Summary */}
+                <div className="mt-32 max-w-3xl mx-auto text-center relative z-10">
+                    <div className="bg-white border-2 border-slate-900 p-8 md:p-12 shadow-[6px_6px_0px_0px_rgba(30,41,59,1)] relative">
+                        {/* Lightbulb Icon */}
+                        <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center border-2 border-slate-900">
+                            <Lightbulb size={24} className="text-slate-900" />
+                        </div>
+
+                        <div className="font-mono text-xs text-amber-600 uppercase tracking-widest mb-4 mt-4">The Ultimate Lesson</div>
+                        <h3 className="font-serif text-3xl md:text-4xl text-slate-900 mb-6">
+                            Think Big. Start Small. Act Now.
+                        </h3>
+                        <p className="font-sans text-lg text-slate-600 leading-relaxed mb-6">
+                            Every scar taught me the same thing: waiting for perfection costs more than starting imperfectly.
+                            The families I&apos;ve helped didn&apos;t have the &quot;perfect&quot; timing. They had the courage to begin.
+                        </p>
+                        <div className="font-hand text-2xl text-slate-500 rotate-1">
+                            &quot;Millionaire Clients, Not Millionaire Agents.&quot;
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
     );

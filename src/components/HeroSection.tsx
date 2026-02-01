@@ -1,7 +1,20 @@
+'use client';
+
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
-const HeroSection = () => {
+interface HeroSectionProps {
+    onOpenModal: () => void;
+}
+
+const HeroSection: React.FC<HeroSectionProps> = ({ onOpenModal }) => {
+    // Demo avatar images for "Helping families since '94"
+    const avatarImages = [
+        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100&q=80',
+        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&h=100&q=80',
+        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&h=100&q=80',
+    ];
+
     return (
         <header className="relative pt-40 pb-20 md:pt-52 md:pb-32 px-6 max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
@@ -22,14 +35,22 @@ const HeroSection = () => {
                             I&apos;m here to show you the scars, the receipts, and the truth about building generational wealth.
                         </p>
                         <div className="mt-12 flex flex-col md:flex-row gap-6 items-start md:items-center">
-                            <button className="group flex items-center gap-4 border-b-2 border-slate-900 pb-1 hover:gap-6 transition-all">
+                            <button
+                                onClick={onOpenModal}
+                                className="group flex items-center gap-4 border-b-2 border-slate-900 pb-1 hover:gap-6 transition-all"
+                            >
                                 <span className="font-mono text-sm uppercase tracking-widest">Start the Journey</span>
                                 <ArrowRight size={16} />
                             </button>
                             <div className="flex items-center gap-2">
                                 <div className="flex -space-x-2">
-                                    {[1, 2, 3].map((i) => (
-                                        <div key={i} className="w-8 h-8 rounded-full bg-slate-200 border-2 border-[#F9F8F4]" />
+                                    {avatarImages.map((src, i) => (
+                                        <img
+                                            key={i}
+                                            src={src}
+                                            alt={`Client ${i + 1}`}
+                                            className="w-8 h-8 rounded-full border-2 border-[#F9F8F4] object-cover"
+                                        />
                                     ))}
                                 </div>
                                 <span className="font-mono text-xs text-slate-500">Helping families since &apos;94</span>
@@ -38,15 +59,24 @@ const HeroSection = () => {
                     </div>
                 </div>
 
-                {/* Right Column: The Visual (Abstract/Bespoke) */}
+                {/* Right Column: Edwin & Melina Photos */}
                 <div className="md:col-span-4 relative hidden md:block">
+                    {/* Edwin's Photo */}
                     <div className="absolute top-0 right-0 w-64 h-80 bg-slate-200 overflow-hidden grayscale contrast-125 border-2 border-slate-900 rotate-3 z-0">
-                        <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-80 mix-blend-multiply"></div>
+                        <img
+                            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80"
+                            alt="Edwin Leong"
+                            className="w-full h-full object-cover opacity-80 mix-blend-multiply"
+                        />
                     </div>
 
-                    {/* Second Frame with Image */}
+                    {/* Melina's Photo */}
                     <div className="absolute top-12 right-12 w-64 h-80 border-2 border-slate-900 z-10 -rotate-2 overflow-hidden bg-slate-100">
-                        <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1460317442991-0ec2aa5a1199?auto=format&fit=crop&q=80')] bg-cover bg-center grayscale contrast-125 mix-blend-multiply opacity-80"></div>
+                        <img
+                            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
+                            alt="Melina"
+                            className="w-full h-full object-cover grayscale contrast-125 mix-blend-multiply opacity-80"
+                        />
                     </div>
 
                     {/* The "Note" Card */}

@@ -3,7 +3,11 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
-const Navbar = () => {
+interface NavbarProps {
+    onOpenModal: () => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
@@ -28,7 +32,10 @@ const Navbar = () => {
                         <a href="#philosophy" className="hover:text-slate-900 transition-colors">Philosophy</a>
                         <a href="#scars" className="hover:text-slate-900 transition-colors">The Scars</a>
                         <a href="#receipts" className="hover:text-slate-900 transition-colors">Receipts</a>
-                        <button className="bg-slate-900 text-[#F9F8F4] px-6 py-2 hover:bg-slate-800 transition-all transform hover:-translate-y-1 shadow-lg">
+                        <button
+                            onClick={onOpenModal}
+                            className="bg-slate-900 text-[#F9F8F4] px-6 py-2 hover:bg-slate-800 transition-all transform hover:-translate-y-1 shadow-lg"
+                        >
                             Book Consultation
                         </button>
                     </div>
@@ -46,7 +53,12 @@ const Navbar = () => {
                     <a href="#philosophy" onClick={() => setIsMenuOpen(false)}>Philosophy</a>
                     <a href="#scars" onClick={() => setIsMenuOpen(false)}>The Scars</a>
                     <a href="#receipts" onClick={() => setIsMenuOpen(false)}>Receipts</a>
-                    <button className="font-mono text-sm bg-slate-900 text-white px-8 py-3">Book Consultation</button>
+                    <button
+                        onClick={() => { setIsMenuOpen(false); onOpenModal(); }}
+                        className="font-mono text-sm bg-slate-900 text-white px-8 py-3"
+                    >
+                        Book Consultation
+                    </button>
                 </div>
             )}
         </>
