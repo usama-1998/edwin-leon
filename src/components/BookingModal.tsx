@@ -46,12 +46,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
                     <X size={20} />
                 </button>
 
-                {/* Stamp Effect */}
-                <div className="absolute -top-4 -right-4 w-24 h-24 rounded-full border-4 border-red-800 text-red-800 flex items-center justify-center font-mono text-[10px] font-bold uppercase rotate-12 opacity-80 mix-blend-multiply bg-white z-10 pointer-events-none">
-                    <div className="text-center leading-tight">
-                        No Fluff<br />Zone<br />★
-                    </div>
-                </div>
+
 
                 <div className="text-center mb-8">
                     <h2 className="font-serif text-3xl mb-3 text-slate-900">Let&apos;s Look at Your Numbers</h2>
