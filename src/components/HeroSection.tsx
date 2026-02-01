@@ -30,18 +30,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onOpenModal }) => {
                             But if you want someone who&apos;s actually been through the fire...
                         </p>
 
-                        {/* Let's Talk Button - Highlighted */}
-                        <div className="mt-6 relative inline-block">
-                            {/* Decorative lines */}
-                            <div className="absolute -left-4 top-1/2 w-3 h-[2px] bg-red-600"></div>
-                            <div className="absolute -right-4 top-1/2 w-3 h-[2px] bg-red-600"></div>
-                            <button
-                                onClick={onOpenModal}
-                                className="bg-slate-900 text-white font-mono text-lg md:text-xl uppercase tracking-widest px-8 py-4 hover:bg-slate-800 transition-all cursor-pointer shadow-lg hover:shadow-xl hover:-translate-y-1"
-                            >
-                                Let&apos;s Talk
-                            </button>
-                        </div>
+                        {/* Let's Talk - Minimal Link Style */}
+                        <button
+                            onClick={onOpenModal}
+                            className="mt-6 font-mono text-lg md:text-xl text-slate-900 border-b-2 border-slate-900 pb-1 hover:text-red-700 hover:border-red-700 transition-all cursor-pointer uppercase tracking-widest"
+                        >
+                            Let&apos;s Talk →
+                        </button>
                     </div>
                 </div>
 
