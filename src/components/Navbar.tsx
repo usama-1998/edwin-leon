@@ -29,19 +29,19 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-12 font-mono text-xs uppercase tracking-widest text-slate-500 items-center">
-                        <a href="#philosophy" className="hover:text-slate-900 transition-colors">Philosophy</a>
-                        <a href="#scars" className="hover:text-slate-900 transition-colors">The Scars</a>
-                        <a href="#receipts" className="hover:text-slate-900 transition-colors">Receipts</a>
+                        <a href="#philosophy" className="hover:text-slate-900 transition-colors cursor-pointer">Philosophy</a>
+                        <a href="#scars" className="hover:text-slate-900 transition-colors cursor-pointer">The Scars</a>
+                        <a href="#receipts" className="hover:text-slate-900 transition-colors cursor-pointer">Receipts</a>
                         <button
                             onClick={onOpenModal}
-                            className="bg-slate-900 text-[#F9F8F4] px-6 py-2 hover:bg-slate-800 transition-all transform hover:-translate-y-1 shadow-lg"
+                            className="bg-slate-900 text-[#F9F8F4] px-6 py-2 hover:bg-slate-800 transition-all transform hover:-translate-y-1 shadow-lg cursor-pointer"
                         >
                             Book Consultation
                         </button>
                     </div>
 
                     {/* Mobile Toggle */}
-                    <button className="md:hidden z-50" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                    <button className="md:hidden z-50 cursor-pointer" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                         {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
                 </div>
@@ -55,7 +55,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
                     <a href="#receipts" onClick={() => setIsMenuOpen(false)}>Receipts</a>
                     <button
                         onClick={() => { setIsMenuOpen(false); onOpenModal(); }}
-                        className="font-mono text-sm bg-slate-900 text-white px-8 py-3"
+                        className="font-mono text-sm bg-slate-900 text-white px-8 py-3 cursor-pointer"
                     >
                         Book Consultation
                     </button>
