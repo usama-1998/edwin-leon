@@ -211,14 +211,8 @@ const ReceiptsSection = () => {
                     </div>
                 </div>
 
-                {/* See More CTA - Now at Top */}
-                <div className="mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                    <button
-                        onClick={() => setShowAll(!showAll)}
-                        className="border-b-2 border-slate-900 pb-1 font-mono text-sm uppercase tracking-widest hover:text-red-700 hover:border-red-700 transition-colors cursor-pointer"
-                    >
-                        {showAll ? 'Show Less' : 'See More Success Stories'} →
-                    </button>
+                {/* Info Text */}
+                <div className="mb-8 text-center md:text-left">
                     <p className="font-mono text-xs text-slate-500 uppercase tracking-widest">
                         These are real clients, real properties, real results
                     </p>
@@ -270,6 +264,16 @@ const ReceiptsSection = () => {
                             </div>
                         </div>
                     ))}
+                </div>
+
+                {/* See More CTA - Below Cards */}
+                <div className="mt-12 text-center">
+                    <button
+                        onClick={() => setShowAll(!showAll)}
+                        className="border-b-2 border-slate-900 pb-1 font-mono text-sm uppercase tracking-widest hover:text-red-700 hover:border-red-700 transition-colors cursor-pointer"
+                    >
+                        {showAll ? 'Show Less' : 'See More Success Stories'} →
+                    </button>
                 </div>
 
             </div>

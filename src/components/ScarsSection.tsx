@@ -53,7 +53,7 @@ const ScarsSection = () => {
 
                     {/* ITEM 2: The Friend Deal */}
                     <div className="flex flex-col md:flex-row items-center justify-between relative group">
-                        <div className="w-full md:w-5/12 order-1 pr-0 md:pr-12 flex justify-end">
+                        <div className="w-full md:w-5/12 order-1 pr-0 md:pr-12 flex justify-center md:justify-end">
                             <div className="relative">
                                 <Polaroid
                                     imageSrc="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80"
