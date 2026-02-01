@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
 
 interface HeroSectionProps {
     onOpenModal: () => void;
@@ -17,32 +16,33 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onOpenModal }) => {
                     <div className="inline-block border border-slate-800 px-3 py-1 font-mono text-xs uppercase tracking-widest mb-8 bg-white rotate-1">
                         Since 1994 • Singapore
                     </div>
-
-                    {/* Headline Style 1: Bold serif → Italic → Bold underline */}
                     <h1 className="text-5xl md:text-6xl lg:text-7xl leading-[0.9] text-slate-900 mb-12">
                         <span className="font-serif font-bold">I lost money</span> <br />
                         <span className="font-serif italic font-light text-slate-600">so you don&apos;t</span> <br />
                         <span className="font-serif font-bold hand-underline">have to.</span>
                     </h1>
 
-                    {/* Yellow sticky note with formatted text */}
-                    <div className="max-w-xl bg-yellow-100 p-6 shadow-md rotate-[-1deg] border border-yellow-200/50 mb-10">
-                        <p className="font-hand text-lg md:text-xl text-slate-800 leading-relaxed">
+                    {/* Typewriter/Memo Style Card - Tilted with Shadow */}
+                    <div className="max-w-lg bg-white border border-slate-200 p-8 shadow-[4px_4px_0px_0px_rgba(30,41,59,0.8)] rotate-[-1deg] mb-10">
+                        <p className="font-mono text-sm md:text-base text-slate-700 leading-loose">
                             If you&apos;re looking for a guru with a Lambo, I&apos;m not your guy!
                             <br /><br />
                             But if you want someone who&apos;s actually been through the fire...
-                            <br /><br />
-                            <span className="text-slate-900 font-semibold">Let&apos;s talk.</span>
                         </p>
-                    </div>
 
-                    <button
-                        onClick={onOpenModal}
-                        className="group flex items-center gap-4 border-b-2 border-slate-900 pb-1 hover:gap-6 transition-all cursor-pointer"
-                    >
-                        <span className="font-mono text-sm uppercase tracking-widest">Start the Journey</span>
-                        <ArrowRight size={16} />
-                    </button>
+                        {/* Let's Talk Button - Highlighted */}
+                        <div className="mt-6 relative inline-block">
+                            {/* Decorative lines */}
+                            <div className="absolute -left-4 top-1/2 w-3 h-[2px] bg-red-600"></div>
+                            <div className="absolute -right-4 top-1/2 w-3 h-[2px] bg-red-600"></div>
+                            <button
+                                onClick={onOpenModal}
+                                className="bg-slate-900 text-white font-mono text-lg md:text-xl uppercase tracking-widest px-8 py-4 hover:bg-slate-800 transition-all cursor-pointer shadow-lg hover:shadow-xl hover:-translate-y-1"
+                            >
+                                Let&apos;s Talk
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
                 {/* Right Column: Edwin's Photo with Sticky Notes */}
