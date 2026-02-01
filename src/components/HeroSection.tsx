@@ -25,14 +25,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onOpenModal }) => {
                         <span className="font-serif font-bold hand-underline">have to.</span>
                     </h1>
 
-                    {/* Yellow sticky note with larger text and line breaks */}
+                    {/* Yellow sticky note with formatted text */}
                     <div className="max-w-xl bg-yellow-100 p-6 shadow-md rotate-[-1deg] border border-yellow-200/50 mb-10">
-                        <p className="font-hand text-2xl md:text-3xl text-slate-800 leading-relaxed">
-                            If you&apos;re looking for a guru with a Lambo,
-                            <br />I&apos;m not your guy.
+                        <p className="font-hand text-xl md:text-2xl text-slate-800 leading-relaxed">
+                            If you&apos;re looking for a guru with a Lambo, I&apos;m not your guy!
                             <br /><br />
                             But if you want someone who&apos;s actually been through the fire...
-                            <br /><span className="text-slate-900 font-semibold">let&apos;s talk.</span>
+                            <br /><br />
+                            <span className="text-slate-900 font-semibold">Let&apos;s talk.</span>
                         </p>
                     </div>
 
