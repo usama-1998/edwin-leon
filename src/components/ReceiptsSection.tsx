@@ -198,8 +198,8 @@ const ReceiptsSection = () => {
         <section id="receipts" className="py-24 px-6 bg-white relative border-t border-slate-200">
             <div className="max-w-6xl mx-auto">
 
-                <div className="flex flex-col md:flex-row items-end justify-between mb-16 border-b-2 border-slate-900 pb-6">
-                    <div>
+                <div className="flex flex-col md:flex-row items-center md:items-end justify-between mb-16 border-b-2 border-slate-900 pb-6">
+                    <div className="text-center md:text-left mb-4 md:mb-0">
                         <h2 className="font-serif text-4xl md:text-5xl text-slate-900 mb-2">The Track Record</h2>
                         <div className="font-mono text-xs uppercase tracking-widest text-slate-500">Client Properties & Reviews • Est. 1994</div>
                     </div>

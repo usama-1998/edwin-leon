@@ -26,7 +26,7 @@ const ScarsSection = () => {
 
                     {/* ITEM 1: The '97 Crash */}
                     <div className="flex flex-col md:flex-row items-center justify-between relative group">
-                        <div className="w-full md:w-5/12 text-right order-2 md:order-1 pr-0 md:pr-12 mt-8 md:mt-0">
+                        <div className="w-full md:w-5/12 text-center md:text-right order-2 md:order-1 pr-0 md:pr-12 mt-8 md:mt-0">
                             <div className="inline-block relative">
                                 <div className="font-mono text-sm text-red-600 mb-2 font-bold tracking-widest">OCTOBER 1997</div>
                                 <h3 className="font-serif text-3xl md:text-4xl mb-4">The Asian Financial Crisis</h3>
@@ -70,7 +70,7 @@ const ScarsSection = () => {
                         {/* Center Dot */}
                         <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-slate-900 rounded-full border-4 border-[#F5F4F0] shadow-sm z-20 hidden md:block"></div>
 
-                        <div className="w-full md:w-5/12 order-2 pl-0 md:pl-12 mt-8 md:mt-0">
+                        <div className="w-full md:w-5/12 order-2 pl-0 md:pl-12 mt-8 md:mt-0 text-center md:text-left">
                             <div className="inline-block relative">
                                 <div className="font-mono text-sm text-slate-600 mb-2 font-bold tracking-widest">FEBRUARY 2004</div>
                                 <h3 className="font-serif text-3xl md:text-4xl mb-4">The &quot;Friend&quot; Contract</h3>
@@ -86,7 +86,7 @@ const ScarsSection = () => {
 
                     {/* ITEM 3: Timing the Bottom */}
                     <div className="flex flex-col md:flex-row items-center justify-between relative group">
-                        <div className="w-full md:w-5/12 text-right order-2 md:order-1 pr-0 md:pr-12 mt-8 md:mt-0">
+                        <div className="w-full md:w-5/12 text-center md:text-right order-2 md:order-1 pr-0 md:pr-12 mt-8 md:mt-0">
                             <div className="inline-block relative">
                                 <div className="font-mono text-sm text-amber-600 mb-2 font-bold tracking-widest">MAY 2009</div>
                                 <h3 className="font-serif text-3xl md:text-4xl mb-4">Waiting for &quot;Perfect&quot;</h3>

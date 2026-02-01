@@ -38,24 +38,35 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
                 className={`relative bg-white w-full max-w-lg mx-4 p-8 md:p-12 border-2 border-slate-900 shadow-[8px_8px_0px_0px_rgba(30,41,59,1)] transition-all duration-300 ${isOpen ? 'scale-100 translate-y-0' : 'scale-95 translate-y-4'}`}
                 onClick={(e) => e.stopPropagation()}
             >
+                {/* Decorative Tape */}
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-20 h-5 bg-yellow-100/80 z-20"></div>
+
                 {/* Close Button */}
                 <button
                     onClick={onClose}
-                    className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center border border-slate-200 hover:bg-slate-100 transition-colors"
+                    className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center border border-slate-200 hover:bg-slate-100 transition-colors cursor-pointer"
                 >
                     <X size={20} />
                 </button>
 
+                {/* Edwin's Photo Badge */}
+                <div className="absolute -top-8 -left-4 md:-left-8 w-16 h-16 rounded-full overflow-hidden border-4 border-slate-900 shadow-lg z-30">
+                    <img
+                        src="/images/edwin-leong-enhanced.png"
+                        alt="Edwin Leong"
+                        className="w-full h-full object-cover object-top"
+                    />
+                </div>
 
-
-                <div className="text-center mb-8">
-                    <h2 className="font-serif text-3xl mb-3 text-slate-900">Let&apos;s Look at Your Numbers</h2>
+                <div className="text-center mb-8 pt-4">
+                    <div className="font-mono text-xs uppercase tracking-widest text-red-600 mb-2">Let&apos;s Build Your Legacy</div>
+                    <h2 className="font-serif text-2xl md:text-3xl mb-3 text-slate-900">Ready to Look at Your Numbers?</h2>
                     <p className="font-sans text-slate-600 text-sm">No sales pitch. Just a strategy session to see if your portfolio is leak-proof.</p>
                 </div>
 
                 <form className="space-y-5">
                     <div className="flex flex-col gap-2">
-                        <label className="font-mono text-xs uppercase text-slate-500">Name</label>
+                        <label className="font-mono text-xs uppercase text-slate-500">Your Name</label>
                         <input
                             type="text"
                             className="w-full bg-[#F9F8F4] border-b-2 border-slate-300 focus:border-slate-900 outline-none p-3 font-serif text-lg transition-colors"
@@ -71,7 +82,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
                         />
                     </div>
                     <div className="flex flex-col gap-2">
-                        <label className="font-mono text-xs uppercase text-slate-500">Biggest Property Concern?</label>
+                        <label className="font-mono text-xs uppercase text-slate-500">What&apos;s on your mind?</label>
                         <input
                             type="text"
                             className="w-full bg-[#F9F8F4] border-b-2 border-slate-300 focus:border-slate-900 outline-none p-3 font-serif text-lg transition-colors"
@@ -81,9 +92,9 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
 
                     <button
                         type="submit"
-                        className="w-full bg-slate-900 text-white py-4 mt-6 font-mono uppercase tracking-widest hover:bg-red-800 transition-colors"
+                        className="w-full bg-slate-900 text-white py-4 mt-6 font-mono uppercase tracking-widest hover:bg-red-800 transition-colors cursor-pointer"
                     >
-                        Book The Chat
+                        Let&apos;s Talk →
                     </button>
                     <p className="text-center font-mono text-[10px] text-slate-400 mt-3 uppercase">
                         Limited slots available for non-clients per month.

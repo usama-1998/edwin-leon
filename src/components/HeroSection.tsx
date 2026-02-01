@@ -8,23 +8,34 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ onOpenModal }) => {
     return (
-        <header className="relative pt-40 pb-20 md:pt-52 md:pb-32 px-6 max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+        <header className="relative pt-32 pb-16 md:pt-52 md:pb-32 px-6 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
 
                 {/* Left Column: The Hook */}
-                <div className="md:col-span-7 z-10">
-                    <div className="inline-block border border-slate-800 px-3 py-1 font-mono text-xs uppercase tracking-widest mb-8 bg-white rotate-1">
+                <div className="md:col-span-7 z-10 text-center md:text-left">
+                    <div className="inline-block border border-slate-800 px-3 py-1 font-mono text-xs uppercase tracking-widest mb-6 md:mb-8 bg-white rotate-1">
                         Since 1994 • Singapore
                     </div>
-                    <h1 className="text-5xl md:text-6xl lg:text-7xl leading-[0.9] text-slate-900 mb-12">
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl leading-[0.9] text-slate-900 mb-8 md:mb-12">
                         <span className="font-serif font-medium">I lost money</span> <br />
                         <span className="font-serif italic font-light text-slate-600">so you don&apos;t</span> <br />
                         <span className="font-serif font-medium hand-underline">have to.</span>
                     </h1>
 
+                    {/* Mobile Image - Show on mobile only */}
+                    <div className="md:hidden mb-8 flex justify-center">
+                        <div className="relative w-48 h-56 bg-slate-200 overflow-hidden border-2 border-slate-900 rotate-2 shadow-xl">
+                            <img
+                                src="/images/edwin-leong-enhanced.png"
+                                alt="Edwin Leong"
+                                className="w-full h-full object-cover object-top"
+                            />
+                        </div>
+                    </div>
+
                     {/* Typewriter/Memo Style Card - Tilted with Shadow */}
-                    <div className="max-w-lg bg-white border border-slate-200 p-8 shadow-[4px_4px_0px_0px_rgba(30,41,59,0.8)] rotate-[-1deg] mb-10">
-                        <p className="font-mono text-sm md:text-base text-slate-700 leading-loose">
+                    <div className="max-w-lg mx-auto md:mx-0 bg-white border border-slate-200 p-6 md:p-8 shadow-[4px_4px_0px_0px_rgba(30,41,59,0.8)] rotate-[-1deg] mb-8 md:mb-10">
+                        <p className="font-mono text-sm md:text-base text-slate-700 leading-loose text-left">
                             If you&apos;re looking for a guru with a Lambo, I&apos;m not your guy!
                             <br /><br />
                             But if you want someone who&apos;s actually been through the fire...
@@ -40,7 +51,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onOpenModal }) => {
                     </div>
                 </div>
 
-                {/* Right Column: Edwin's Photo with Sticky Notes */}
+                {/* Right Column: Edwin's Photo with Sticky Notes - Desktop Only */}
                 <div className="md:col-span-5 relative hidden md:block">
                     {/* Sticky Note - Top Left of Photo */}
                     <div className="absolute -top-4 -left-8 bg-yellow-100 p-4 shadow-lg rotate-[-8deg] w-40 border border-yellow-200/50 z-30">
