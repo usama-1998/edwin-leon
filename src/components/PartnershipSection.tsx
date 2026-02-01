@@ -6,25 +6,32 @@ const PartnershipSection = () => {
         <section className="py-32 px-6 overflow-hidden bg-[#F9F8F4]">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
 
-                {/* Visual Collage - Edwin & Melina Photos */}
+                {/* Visual Collage - Edwin (Large) & Melina Placeholder (Smaller) */}
                 <div className="relative h-[600px] w-full">
-                    {/* Edwin's Photo - Main */}
-                    <div className="absolute top-0 left-0 w-3/4 h-3/4 bg-slate-200 overflow-hidden border border-slate-900 z-10">
+                    {/* Edwin's Photo - Main & Larger */}
+                    <div className="absolute top-0 left-0 w-[80%] h-[75%] bg-slate-200 overflow-hidden border-2 border-slate-900 z-10 shadow-xl">
                         <img
-                            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80"
+                            src="/images/edwin-leong-enhanced.png"
                             alt="Edwin Leong"
-                            className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                            className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-700"
                         />
                     </div>
-                    {/* Melina's Photo - Overlapping */}
-                    <div className="absolute bottom-0 right-0 w-2/3 h-2/3 bg-white p-4 border border-slate-900 z-20 shadow-2xl -rotate-2">
-                        <img
-                            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
-                            alt="Melina"
-                            className="w-full h-full object-cover"
-                        />
+
+                    {/* Melina Placeholder - Smaller & Below */}
+                    <div className="absolute bottom-0 right-0 w-[55%] h-[55%] bg-white p-4 border-2 border-dashed border-slate-400 z-20 shadow-2xl -rotate-2">
+                        <div className="w-full h-full bg-[#F5F4F0] flex flex-col items-center justify-center">
+                            <div className="w-20 h-20 rounded-full bg-slate-200 flex items-center justify-center mb-4">
+                                <span className="font-serif text-3xl text-slate-400 italic">M</span>
+                            </div>
+                            <span className="font-mono text-sm text-slate-500 uppercase tracking-wide">Melina</span>
+                            <span className="font-mono text-xs text-slate-400 mt-1">@ShopTravelLove</span>
+                            <div className="mt-4 border border-slate-300 px-3 py-1">
+                                <span className="font-mono text-[10px] text-slate-400 uppercase">Add Photo</span>
+                            </div>
+                        </div>
                         <div className="absolute bottom-6 left-6 bg-white px-3 py-1 font-mono text-xs">@ShopTravelLove</div>
                     </div>
+
                     {/* Decorative Tape */}
                     <div className="absolute top-[-10px] left-[40%] w-32 h-8 bg-yellow-100/80 rotate-2 z-30 mix-blend-multiply"></div>
                 </div>

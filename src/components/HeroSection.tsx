@@ -59,28 +59,28 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onOpenModal }) => {
                     </div>
                 </div>
 
-                {/* Right Column: Edwin & Melina Photos */}
+                {/* Right Column: Edwin's Photo (Large) & Wife Placeholder (Smaller) */}
                 <div className="md:col-span-4 relative hidden md:block">
-                    {/* Edwin's Photo */}
-                    <div className="absolute top-0 right-0 w-64 h-80 bg-slate-200 overflow-hidden grayscale contrast-125 border-2 border-slate-900 rotate-3 z-0">
+                    {/* Edwin's Photo - Large & Primary */}
+                    <div className="absolute top-0 right-0 w-72 h-96 bg-slate-200 overflow-hidden border-2 border-slate-900 rotate-2 z-10 shadow-xl">
                         <img
-                            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80"
+                            src="/images/edwin-leong-enhanced.png"
                             alt="Edwin Leong"
-                            className="w-full h-full object-cover opacity-80 mix-blend-multiply"
+                            className="w-full h-full object-cover object-top"
                         />
                     </div>
 
-                    {/* Melina's Photo */}
-                    <div className="absolute top-12 right-12 w-64 h-80 border-2 border-slate-900 z-10 -rotate-2 overflow-hidden bg-slate-100">
-                        <img
-                            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
-                            alt="Melina"
-                            className="w-full h-full object-cover grayscale contrast-125 mix-blend-multiply opacity-80"
-                        />
+                    {/* Wife Placeholder - Smaller & Below */}
+                    <div className="absolute top-72 right-20 w-48 h-56 border-2 border-dashed border-slate-400 z-20 -rotate-3 overflow-hidden bg-[#F5F4F0] flex flex-col items-center justify-center">
+                        <div className="w-16 h-16 rounded-full bg-slate-200 flex items-center justify-center mb-3">
+                            <span className="font-mono text-2xl text-slate-400">M</span>
+                        </div>
+                        <span className="font-mono text-xs text-slate-400 uppercase tracking-wide">Melina</span>
+                        <span className="font-mono text-[10px] text-slate-300 mt-1">@ShopTravelLove</span>
                     </div>
 
                     {/* The "Note" Card */}
-                    <div className="absolute top-60 -left-12 bg-white p-6 shadow-xl border border-slate-100 max-w-xs rotate-1 z-20">
+                    <div className="absolute top-48 -left-16 bg-white p-6 shadow-xl border border-slate-100 max-w-xs rotate-1 z-30">
                         <div className="font-mono text-[10px] text-slate-400 mb-2 uppercase border-b pb-2">Memo: Re: Guru Culture</div>
                         <p className="font-serif text-lg italic leading-tight text-slate-800">
                             &quot;Wealth is quiet. Rich is loud. We are building wealth.&quot;
