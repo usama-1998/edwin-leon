@@ -27,7 +27,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onOpenModal }) => {
 
                     {/* Yellow sticky note with formatted text */}
                     <div className="max-w-xl bg-yellow-100 p-6 shadow-md rotate-[-1deg] border border-yellow-200/50 mb-10">
-                        <p className="font-hand text-xl md:text-2xl text-slate-800 leading-relaxed">
+                        <p className="font-hand text-lg md:text-xl text-slate-800 leading-relaxed">
                             If you&apos;re looking for a guru with a Lambo, I&apos;m not your guy!
                             <br /><br />
                             But if you want someone who&apos;s actually been through the fire...

@@ -1,30 +1,30 @@
 import './globals.css';
-import { Playfair_Display, Inter, Space_Mono, Nothing_You_Could_Do } from 'next/font/google';
+import { Playfair_Display, Inter, Space_Mono, Patrick_Hand } from 'next/font/google';
 
 // Font Configuration
-const playfair = Playfair_Display({ 
+const playfair = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-playfair',
   display: 'swap',
 });
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
 });
 
-const spaceMono = Space_Mono({ 
+const spaceMono = Space_Mono({
   weight: ['400', '700'],
   subsets: ['latin'],
   variable: '--font-space-mono',
   display: 'swap',
 });
 
-const nothing = Nothing_You_Could_Do({ 
+const patrickHand = Patrick_Hand({
   weight: '400',
   subsets: ['latin'],
-  variable: '--font-nothing',
+  variable: '--font-hand',
   display: 'swap',
 });
 
@@ -39,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable} ${spaceMono.variable} ${nothing.variable}`}>
+    <html lang="en" className={`${playfair.variable} ${inter.variable} ${spaceMono.variable} ${patrickHand.variable}`}>
       <body className="font-sans antialiased bg-[#F9F8F4]">
         {children}
       </body>
