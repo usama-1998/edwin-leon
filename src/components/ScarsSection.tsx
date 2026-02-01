@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldAlert, Lightbulb } from 'lucide-react';
+import { ShieldAlert } from 'lucide-react';
 import Polaroid from './ui/Polaroid';
 
 const ScarsSection = () => {
@@ -116,12 +116,16 @@ const ScarsSection = () => {
                 {/* Final Lesson Summary */}
                 <div className="mt-32 max-w-3xl mx-auto text-center relative z-10">
                     <div className="bg-white border-2 border-slate-900 p-8 md:p-12 shadow-[6px_6px_0px_0px_rgba(30,41,59,1)] relative">
-                        {/* Lightbulb Icon */}
-                        <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center border-2 border-slate-900">
-                            <Lightbulb size={24} className="text-slate-900" />
+                        {/* Edwin's Photo Circle */}
+                        <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 rounded-full overflow-hidden border-4 border-slate-900 shadow-lg">
+                            <img
+                                src="/images/edwin-leong-enhanced.png"
+                                alt="Edwin Leong"
+                                className="w-full h-full object-cover object-top"
+                            />
                         </div>
 
-                        <div className="font-mono text-xs text-amber-600 uppercase tracking-widest mb-4 mt-4">The Ultimate Lesson</div>
+                        <div className="font-mono text-xs text-amber-600 uppercase tracking-widest mb-4 mt-8">The Ultimate Lesson</div>
                         <h3 className="font-serif text-3xl md:text-4xl text-slate-900 mb-6">
                             Think Big. Start Small. Act Now.
                         </h3>
