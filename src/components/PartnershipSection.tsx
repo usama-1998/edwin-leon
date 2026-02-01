@@ -33,7 +33,7 @@ const PartnershipSection = () => {
                         Property is stressful. Marriage is hard. Doing both together? That takes a system.
                     </p>
                     <p className="font-sans text-lg text-slate-600 mb-12 leading-relaxed">
-                        My wife Moon (@ShopTravelLove) and I have navigated 30 years of investments while raising a family. We don&apos;t just teach you how to buy; we teach you how to build a legacy that your family actually enjoys.
+                        My wife Melina (@ShopTravelLove) and I have navigated 30 years of investments while raising a family. We don&apos;t just teach you how to buy; we teach you how to build a legacy that your family actually enjoys.
                     </p>
                     <a href="#" className="inline-block border-b-2 border-slate-900 pb-1 font-mono text-sm uppercase hover:text-red-700 hover:border-red-700 transition-colors">
                         Read Our Story
