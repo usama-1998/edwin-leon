@@ -11,7 +11,7 @@ const HeroSection = () => {
                     <div className="inline-block border border-slate-800 px-3 py-1 font-mono text-xs uppercase tracking-widest mb-8 bg-white rotate-1">
                         Since 1994 • Singapore
                     </div>
-                    <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl leading-[0.9] text-slate-900 mb-12">
+                    <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-[0.9] text-slate-900 mb-12">
                         I lost money <br />
                         <span className="italic font-light text-slate-600">so you don&apos;t</span> <br />
                         <span className="hand-underline">have to.</span>
